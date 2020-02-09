@@ -1,0 +1,25 @@
+Checking md5 and sha1 in Mac terminal
+
+$ brew install md5sha1sum
+$ md5sum FILENAME
+
+Compare against checksum file:  
+$ md5 -r LX06_Manual.pdf | diff md5.md5 -
+
+————————————————
+
+Do not write .DS_STORE files on network shares
+
+sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+————————————————
+
+View disk information
+
+$ diskutil list
+
+————————————————
+
+Kill USBD when iPhone switches on and off
+
+sudo killall -STOP usbd
